@@ -1,0 +1,16 @@
+/* styles/App.css */
+.not-found {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .not-found h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .not-found button {
+    font-size: 1em;
+    padding: 10px 20px;
+  }
+  

@@ -1,0 +1,152 @@
+/* .application-tracking {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 70px;
+    margin-left: 300px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .application-tracking h1 {
+    text-align: center;
+    color: #003366;
+  }
+  
+  .application-details {
+    padding: 20px;
+  }
+  
+  .detail {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .detail:last-child {
+    border-bottom: none;
+  }
+  
+  .label {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .value {
+    color: #555;
+  }
+  
+  .status {
+    font-weight: bold;
+  }
+  
+  .status.pending {
+    color: #f39c12;
+  }
+  
+  .status.approved {
+    color: #27ae60;
+  }
+  
+  .status.rejected {
+    color: #e74c3c;
+  }
+  
+  .loading, .error, .no-data {
+    text-align: center;
+    color: #555;
+    padding: 20px;
+  }
+   */
+
+   /* Make the navbar fixed */
+
+  
+  /* Style for the application-tracking content */
+  .application-tracking {
+    margin-top: 70px; /* Adjust to match the height of the navbar */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Ensure content is properly aligned */
+  .application-tracking h1 {
+    text-align: center;
+    color: #003366;
+  }
+  
+  .application-details {
+    padding: 20px;
+  }
+  
+  .detail {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .detail:last-child {
+    border-bottom: none;
+  }
+  
+  .label {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .value {
+    color: #555;
+  }
+  
+  .status {
+    font-weight: bold;
+  }
+  
+  .status.pending {
+    color: #f39c12;
+  }
+  
+  .status.approved {
+    color: #27ae60;
+  }
+  
+  .status.rejected {
+    color: #e74c3c;
+  }
+  
+  .loading, .error, .no-data {
+    text-align: center;
+    color: #555;
+    padding: 20px;
+  }
+
+  .premium-details table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .premium-details th, .premium-details td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .premium-details th {
+    background-color: #f4f4f4;
+  }
+  
+  .premium-details tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .premium-details tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  

@@ -1,0 +1,118 @@
+/* ApplicantHomePage.css */
+.applicant-home {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.main-content {
+    padding: 20px;
+    margin-top: 60px; /* Adjust margin-top to match the height of the fixed navbar */
+}
+
+.policy-info {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.policy-info h1 {
+    color: #003366;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.policy-info p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.schemes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.scheme {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 30%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.scheme h2 {
+    color: #003366;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.scheme p {
+    font-size: 16px;
+}
+
+/* Footer */
+.footer {
+    background: #003366;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .scheme {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .scheme {
+        width: 100%;
+    }
+
+    .policy-info h1 {
+        font-size: 28px;
+    }
+
+    .policy-info p {
+        font-size: 16px;
+    }
+
+    .footer {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .policy-info h1 {
+        font-size: 24px;
+    }
+
+    .policy-info p {
+        font-size: 14px;
+    }
+
+    .scheme h2 {
+        font-size: 20px;
+    }
+
+    .scheme p {
+        font-size: 14px;
+    }
+
+    .footer {
+        font-size: 14px;
+        padding: 10px 5px;
+    }
+}

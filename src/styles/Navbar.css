@@ -1,0 +1,52 @@
+/* Ensure the logo and navigation items align properly */
+.navbar {
+    background-color: #007bff; /* Adjust background color to match AdminNavbar */
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+}
+
+.navbar-logo-img {
+    margin-right: 4px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="rgba(255,255,255,.5)" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+}
+
+.navbar-nav .nav-link, .navbar-nav .nav-item .nav-link {
+    color: #fff;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #dcdcdc;
+}
+
+.navbar-nav .nav-dropdown-menu {
+    background-color: #007bff; /* Match the dropdown menu background */
+}
+
+.nav-dropdown-item {
+    color: #fff;
+}
+
+.nav-dropdown-item:hover {
+    background-color: #0056b3; /* Slightly darker color for hover effect */
+}
+
+.nav-dropdown-toggle {
+    color: #fff;
+}
+
+.nav-dropdown-toggle:hover {
+    color: #dcdcdc;
+}
+#basic-navbar-nav{
+    margin-left: 90px;
+}

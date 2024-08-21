@@ -1,0 +1,81 @@
+/* 
+
+.premium-management {
+    padding: 20px;
+  }
+  
+  form {
+    margin-bottom: 20px;
+  }
+  
+  input {
+    margin-right: 10px;
+  }
+  
+  button {
+    margin: 5px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  table tr:hover {
+    background-color: #e2e2e2; 
+  }
+  
+  .error-message {
+    color: red;
+  }
+   */
+
+ 
+   .premium-management {
+    padding: 20px;
+    margin-top: 60px; /* Adjust based on the height of your navbar */
+  }
+  
+  form {
+    margin-bottom: 20px;
+  }
+  
+  input {
+    margin-right: 10px;
+  }
+  
+  button {
+    margin: 5px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  table tr:hover {
+    background-color: #e2e2e2; /* Light gray for hover */
+  }
+  
+  .error-message {
+    color: red;
+  }
+  

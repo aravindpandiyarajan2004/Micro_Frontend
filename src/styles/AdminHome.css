@@ -1,0 +1,297 @@
+/* .admin-home-page {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .dashboard-summary {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .summary-item {
+    flex: 1 1 calc(25% - 20px);
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .summary-item h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .recent-activities {
+    margin-top: 20px;
+  }
+  
+  .recent-activities h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .recent-activities ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .recent-activities li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .recent-activities li:last-child {
+    border-bottom: none;
+  }
+   */
+
+   /* .admin-home-page {
+    font-family: Arial, sans-serif;
+  }
+  
+  .dashboard-content {
+    padding: 20px;
+  }
+  
+  .dashboard-heading {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .dashboard-summary {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .summary-item {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .recent-activities {
+    margin-top: 20px;
+  }
+  
+  .recent-activities h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .recent-activities ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .recent-activities li {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+   */
+
+   /* .admin-home-page {
+    font-family: Arial, sans-serif;
+  }
+  
+  .dashboard-content {
+    padding: 20px;
+  }
+  
+  .dashboard-heading {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .dashboard-summary {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .summary-item {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .recent-activities {
+    margin-top: 20px;
+  }
+  
+  .recent-activities h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .recent-activities ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .recent-activities li {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    padding: 10px;
+  } */
+
+  /* .admin-home-page {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .dashboard-content {
+    padding: 20px;
+  }
+  
+  .dashboard-heading {
+    font-size: 2rem;
+    color: #333;
+    margin-top: 100px; 
+    margin-bottom: 20px;
+    text-align: center; 
+  }
+  
+  .dashboard-summary {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .summary-item {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    flex: 1;
+    min-width: 200px;
+    text-align: center; 
+  }
+  
+  .recent-activities {
+    margin-top: 20px;
+  }
+  
+  .recent-activities h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .recent-activities ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .recent-activities li {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  
+   */
+
+   /* AdminHome.css */
+
+.admin-home-page {
+    font-family: Arial, sans-serif;
+  }
+  
+  .dashboard-content {
+    padding: 20px;
+  }
+  
+  .dashboard-heading {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .dashboard-summary {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .summary-item {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .insurance-filters {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .insurance-filters button {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .insurance-records {
+    margin: 20px 0;
+  }
+  
+  .insurance-records ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .insurance-records li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .recent-activities {
+    margin: 20px 0;
+  }
+  
+  .manage-insurance {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .manage-insurance button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .dashboard-summary {
+      flex-direction: column;
+    }
+  }
+  

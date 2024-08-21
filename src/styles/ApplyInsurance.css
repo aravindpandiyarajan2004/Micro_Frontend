@@ -1,0 +1,208 @@
+/* 
+
+.apply-insurance-form {
+    max-width: 600px;
+    margin-top: 100px;
+    margin-left: 400px;
+     padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.apply-insurance-form h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="date"], input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 8px;
+    accent-color: #007bff;
+}
+
+
+
+
+.error-message {
+    color: #d9534f;
+    font-size: 0.875em;
+    margin-top: 5px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+
+.alert {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.alert-danger {
+    background-color: #d9534f;
+}
+
+.alert-success {
+    background-color: #5bc0de;
+} */
+
+/* Navbar styles */
+
+  
+  /* Apply Insurance Form styles */
+  .apply-insurance-form {
+    max-width: 600px;
+    margin-top: 80px; /* Adjust to match the height of the navbar */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .apply-insurance-form h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  input[type="date"], input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .radio-group {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+  }
+  
+  .radio-group label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  
+  .radio-group input[type="radio"] {
+    margin-right: 8px;
+    accent-color: #007bff;
+  }
+  
+  .error-message {
+    color: #d9534f;
+    font-size: 0.875em;
+    margin-top: 5px;
+  }
+  
+  button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Additional styles for alert messages */
+  .alert {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .alert-danger {
+    background-color: #d9534f;
+  }
+  
+  .alert-success {
+    background-color: #5bc0de;
+  }
+  

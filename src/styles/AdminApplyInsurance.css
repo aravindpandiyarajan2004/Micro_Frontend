@@ -252,7 +252,7 @@
     width: 100%;
   } */
   
-  .admin-manage-applications {
+  /* .admin-manage-applications {
     padding: 20px;
     font-family: Arial, sans-serif;
     margin-top: 70px;
@@ -296,7 +296,7 @@
   }
   
   .accept-button {
-    background-color: #28a745; /* Green for Accept */
+    background-color: #28a745; 
   }
   
   .accept-button:hover {
@@ -304,7 +304,7 @@
   }
   
   .reject-button {
-    background-color: #dc3545; /* Red for Reject */
+    background-color: #dc3545; 
   }
   
   .reject-button:hover {
@@ -312,7 +312,7 @@
   }
   
   .risk-calculator-button {
-    background-color: #ffc107; /* Warning color for Risk Calculator */
+    background-color: #ffc107; 
   }
   
   .risk-calculator-button:hover {
@@ -339,4 +339,49 @@
     border-radius: 4px;
     width: 100%;
   }
-  
+   */
+
+   .admin-manage-applications {
+    margin-top: 6rem;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    padding-bottom: 2rem;
+}
+
+.table-responsive {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.table th {
+    font-weight: 600;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+.btn {
+    width: 100%;
+}
+
+.badge {
+    font-size: 0.9em;
+    padding: 0.5em 0.7em;
+}
+
+h1, h2 {
+    color: #007bff;
+    font-weight: 700;
+}
+
+.shadow-sm {
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+}
+
+@media (max-width: 768px) {
+    .table-responsive {
+        font-size: 0.9em;
+    }
+}

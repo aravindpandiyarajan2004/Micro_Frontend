@@ -139,7 +139,7 @@ const AdminLogin = () => {
                   </Form.Control.Feedback>
                 </Form.Group>
 
-                <Button variant="primary" type="submit" className="w-100 mb-2">
+                <Button variant="primary" type="submit" className="w-100 mb-2" style={{marginTop:10}}>
                   Login
                 </Button>
               </Form>

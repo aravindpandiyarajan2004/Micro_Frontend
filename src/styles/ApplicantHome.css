@@ -41,6 +41,9 @@
     margin-bottom: 20px;
     box-sizing: border-box;
 }
+.scheme :hover{
+    cursor: pointer;
+}
 
 .scheme h2 {
     color: #003366;

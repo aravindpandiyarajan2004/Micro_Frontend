@@ -172,6 +172,7 @@
     background-color: #f8f9fa;
     padding: 20px;
     overflow-y: auto; 
+      
   }
   
   form {
@@ -185,7 +186,7 @@
   }
   
   h1 {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     color: #333;
     text-align: center;
   }

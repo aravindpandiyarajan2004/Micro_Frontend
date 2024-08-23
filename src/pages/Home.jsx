@@ -18,7 +18,7 @@ function Home() {
             />
             <h1 id="welcome">Welcome to Health Insurance</h1>
             <p>Get the best health insurance policies tailored to your needs.</p>
-            <Button variant="primary" href="/register">Register as Applicant</Button>
+            <Button variant="primary" href="/register" style={{width:300}}>Register as Applicant</Button>
           </Col>
         </Row>
       </section>

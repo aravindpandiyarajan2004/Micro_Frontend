@@ -64,16 +64,16 @@
    /* Make the navbar fixed */
 
   
-  /* Style for the application-tracking content */
-  .application-tracking {
-    margin-top: 70px; /* Adjust to match the height of the navbar */
+  
+  /* .application-tracking {
+    margin-top: 70px; 
     padding: 20px;
     background-color: #f9f9f9;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
-  /* Ensure content is properly aligned */
+ 
   .application-tracking h1 {
     text-align: center;
     color: #003366;
@@ -148,5 +148,96 @@
   .premium-details tr:hover {
     background-color: #f1f1f1;
   }
+   */
+
+   .application-tracking-page {
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    padding-bottom: 2rem;
+  }
   
+  h1 {
+
+    text-align: center;
+    color: #003366;
+    font-weight: 700;
+  }
+  
+  .application-card, .premium-card {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    border: none;
+    border-radius: 10px;
+  }
+  
+  .detail-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+  }
+  
+  .detail-label {
+    font-weight: 600;
+    color: #6c757d;
+  }
+  
+  .detail-value {
+    color: #212529;
+  }
+  
+  .status-badge {
+    padding: 0.25em 0.5em;
+    border-radius: 0.25rem;
+    font-weight: 600;
+  }
+  
+  .status-badge.approved {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .status-badge.rejected {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .status-badge.unknown {
+    background-color: #ffc107;
+    color: #212529;
+  }
+  
+  .table {
+    margin-bottom: 0;
+  }
+  
+  .table th {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+  
+  .loading-spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  @media (max-width: 768px) {
+    .detail-row {
+      flex-direction: column;
+    }
+    
+    .detail-value {
+      margin-bottom: 0.5rem;
+    }
+  }
   

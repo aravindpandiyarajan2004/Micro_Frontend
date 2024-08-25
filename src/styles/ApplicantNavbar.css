@@ -1,200 +1,3 @@
-/* 
-.applicant-navbar {
-    background: #003366;
-    padding: 10px 0;
-   
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-}
-
-.applicant-navbar-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    position: relative;
-}
-
-.applicant-navbar-logo {
-    color: #fff;
-    font-size: 24px;
-    font-weight: bold;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-}
-
-.applicant-navbar-logo-img {
-    margin-right: 10px;
-}
-
-.applicant-nav-menu {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.applicant-nav-item {
-    margin-left: 20px;
-}
-
-.applicant-nav-links {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-.applicant-nav-links:hover {
-    text-decoration: underline;
-}
-
-
-.applicant-nav-toggle {
-    display: none;
-    background: #003366;
-    border: none;
-    color: #fff;
-    font-size: 24px;
-    cursor: pointer;
-}
-
-
-
-
-@media (max-width: 768px) {
-    .applicant-nav-menu {
-        display: none; 
-        width: 100%;
-        padding: 0;
-        margin-top: 10px;
-        flex-direction: column;
-        align-items: flex-start;
-        background: #003366;
-    }
-
-    .applicant-nav-menu.active {
-        display: flex;
-    }
-
-    .applicant-nav-item {
-        margin: 10px 0;
-        margin-left: 0;
-    }
-
-    .applicant-navbar-logo {
-        width: 100%;
-        justify-content: space-between;
-        margin-bottom: 10px;
-    }
-
-    .applicant-navbar-logo img {
-        margin-right: 0;
-    }
-
-    .applicant-nav-toggle {
-        display: block; 
-    }
-}
-
-@media (max-width: 480px) {
-    .applicant-navbar-logo {
-        font-size: 20px;
-    }
-
-    .applicant-nav-links {
-        font-size: 16px;
-    }
-} */
-
-/* .applicant-navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: #333;
-    color: rgb(33, 32, 32);
-    padding: 10px;
-    z-index: 1000;
-  }
-  
-
-.applicant-navbar-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.applicant-navbar-logo {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: #fff; 
-}
-
-.applicant-navbar-logo-img {
-    border-radius: 50%;
-    margin-left: 10px;
-}
-.applicant-nav-toggle {
-    background: none;
-    border: none;
-    color: #fff;
-    font-size: 24px;
-    cursor: pointer;
-    display: none; 
-}
-
-.applicant-nav-menu {
-    list-style: none;
-    display: flex;
-}
-
-.applicant-nav-item {
-    margin: 0 15px;
-}
-
-.applicant-nav-links {
-    color: #fff; 
-    text-decoration: none;
-}
-
-.applicant-nav-links:hover {
-   
-    border: 2px solid #ede0e0;
-    border-radius: 10px;
-    padding: 7px;
-    background-color: rgb(195, 127, 255);
-}
-
-.applicant-nav-menu.active {
-    display: block;
-}
-
-
-
-@media (max-width: 768px) {
-    .applicant-nav-menu {
-        display: none;
-        flex-direction: column;
-        background-color: #333; 
-        position: absolute;
-        top: 60px;
-        right: 20px;
-        width: 200px;
-    }
-
-    .applicant-nav-toggle {
-        display: block;
-    }
-} */
-
-/* ApplicantNavbar.css */
-
 .applicant-navbar {
     position: fixed;
     top: 0;
@@ -216,7 +19,7 @@
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: #fff; 
+    color: #fff;
     font-size: 1.5rem;
     font-weight: bold;
 }
@@ -237,7 +40,7 @@
 
 .applicant-nav-links {
     text-decoration: none;
-    color: #fff; 
+    color: #fff;
     font-size: 1rem;
     padding: 5px 10px;
     transition: all 0.3s ease;
@@ -254,7 +57,8 @@
     .applicant-nav-menu {
         display: none;
         flex-direction: column;
-        background-color: #333; /* Example color */
+        background-color: #333;
+        /* Example color */
         position: absolute;
         top: 60px;
         right: 20px;
@@ -265,4 +69,3 @@
         display: block;
     }
 }
-

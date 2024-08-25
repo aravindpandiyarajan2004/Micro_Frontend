@@ -1,6 +1,5 @@
-/* Ensure the logo and navigation items align properly */
 .navbar {
-    background-color: #007bff; /* Adjust background color to match AdminNavbar */
+    background-color: #007bff;
 }
 
 .navbar-brand {
@@ -20,7 +19,8 @@
     background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="rgba(255,255,255,.5)" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
 }
 
-.navbar-nav .nav-link, .navbar-nav .nav-item .nav-link {
+.navbar-nav .nav-link,
+.navbar-nav .nav-item .nav-link {
     color: #fff;
 }
 
@@ -29,7 +29,7 @@
 }
 
 .navbar-nav .nav-dropdown-menu {
-    background-color: #007bff; /* Match the dropdown menu background */
+    background-color: #007bff;
 }
 
 .nav-dropdown-item {
@@ -37,7 +37,7 @@
 }
 
 .nav-dropdown-item:hover {
-    background-color: #0056b3; /* Slightly darker color for hover effect */
+    background-color: #0056b3;
 }
 
 .nav-dropdown-toggle {
@@ -47,6 +47,7 @@
 .nav-dropdown-toggle:hover {
     color: #dcdcdc;
 }
-#basic-navbar-nav{
+
+#basic-navbar-nav {
     margin-left: 90px;
 }

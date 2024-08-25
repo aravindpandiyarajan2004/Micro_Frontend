@@ -21,7 +21,7 @@
 //                 try {
 //                     const response = await axios.get(`http://localhost:8027/admin/applyInsurance/${storedApplicantId}`);
 //                     setSelectedApplication(response.data);
-                    
+
 //                     // Check if risk is calculated
 //                     const isCalculated = await checkIfRiskCalculated(storedApplicantId);
 //                     setRiskCalculatedMap(prevMap => ({ ...prevMap, [storedApplicantId]: isCalculated }));
@@ -223,6 +223,8 @@ const AdminApplyInsurance = () => {
     const [riskScores, setRiskScores] = useState([]);
     const [loading, setLoading] = useState(false);
     const [riskCalculatedMap, setRiskCalculatedMap] = useState({});
+    const [initialButton, setInitialButton] = useState(false);
+    const [riskCalc, setRiskCalc] = useState(0);
 
     useEffect(() => {
         fetchApplications();
@@ -232,7 +234,7 @@ const AdminApplyInsurance = () => {
                 try {
                     const response = await axios.get(`http://localhost:8027/admin/applyInsurance/${storedApplicantId}`);
                     setSelectedApplication(response.data);
-                    
+
                     // Check if risk is calculated
                     const isCalculated = await checkIfRiskCalculated(storedApplicantId);
                     setRiskCalculatedMap(prevMap => ({ ...prevMap, [storedApplicantId]: isCalculated }));
@@ -263,36 +265,60 @@ const AdminApplyInsurance = () => {
         }
     };
 
+
+
     const handleStatusChange = async (newStatus, applicantId) => {
         if (!selectedApplication) return;
 
+        // Show loading alert
+        const loadingSwal = Swal.fire({
+            title: 'Updating Status...',
+            text: 'Please wait while we update the status.',
+            allowOutsideClick: false,
+            showConfirmButton: false,
+            onBeforeOpen: () => {
+                Swal.showLoading();
+            }
+
+        });
+
         try {
+            // Update the application status
             await axios.put(`http://localhost:8027/admin/applyInsurance/${selectedApplication.applyInsuranceId}`, {
                 ...selectedApplication,
                 status: newStatus,
             });
 
+            // Send email notification
             await axios.post(`http://localhost:8027/applyInsurance/sendEmail/${applicantId}/${newStatus}`);
+
+            // Close the loading alert and show success message
+            await loadingSwal.close();
             Swal.fire({
                 title: 'Status Updated',
                 text: `Application status has been updated to ${newStatus}.`,
                 icon: 'success',
                 confirmButtonText: 'OK'
             });
-            fetchApplications(); // Refresh the applications list
-            setSelectedApplication(null); // Clear selection
+
+            // Refresh the applications list and clear selection
+            fetchApplications();
+            setSelectedApplication(null);
         } catch (error) {
-            console.error('Error updating status:', error);
+            // Close the loading alert and show error message
+            await loadingSwal.close();
             Swal.fire({
                 title: 'Error',
                 text: 'There was an error updating the status.',
                 icon: 'error',
                 confirmButtonText: 'OK'
             });
+            console.error('Error updating status:', error);
         }
     };
 
-    const handleCalculateRisk = async () => {
+
+    const handleCalculateRisk = async (app) => {
         const applicantId = localStorage.getItem('selectedApplicantId');
         if (!applicantId) {
             Swal.fire({
@@ -303,6 +329,10 @@ const AdminApplyInsurance = () => {
             });
             return;
         }
+
+        console.log(app.applicant.applicantId);
+
+        // sessionStorage.setItem("ristCalcuilateApplicants", app.applicant.applicantId)
 
         setLoading(true);
         try {
@@ -317,6 +347,7 @@ const AdminApplyInsurance = () => {
                 confirmButtonText: 'OK'
             }).then(() => {
                 // Optionally, you can also redirect or navigate
+                setInitialButton(true)
                 window.location.href = '/risk-calculation';
             });
         } catch (error) {
@@ -370,6 +401,7 @@ const AdminApplyInsurance = () => {
                                                     setSelectedApplication(app);
                                                     handleStatusChange('Approved', app.applicant.applicantId);
                                                 }}
+                                                disabled={app.status !== 'pending'}
                                             >
                                                 Accept
                                             </Button>
@@ -380,6 +412,7 @@ const AdminApplyInsurance = () => {
                                                     setSelectedApplication(app);
                                                     handleStatusChange('Rejected', app.applicant.applicantId);
                                                 }}
+                                                disabled={app.status !== 'pending'}
                                             >
                                                 Reject
                                             </Button>
@@ -387,9 +420,9 @@ const AdminApplyInsurance = () => {
                                                 variant="info"
                                                 onClick={() => {
                                                     setSelectedApplication(app);
-                                                    handleCalculateRisk();
+                                                    handleCalculateRisk(app);
                                                 }}
-                                                disabled={riskCalculatedMap[app.applicant.applicantId] || loading}
+                                                disabled={app.status !== 'pending'}
                                             >
                                                 {loading ? (
                                                     <>
@@ -400,6 +433,8 @@ const AdminApplyInsurance = () => {
                                                     'Risk Calculator'
                                                 )}
                                             </Button>
+
+
                                         </div>
                                     </td>
                                 </tr>

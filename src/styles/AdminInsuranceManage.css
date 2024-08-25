@@ -1,112 +1,49 @@
-/* .insurance-management {
-    padding: 20px;
-    font-family: Arial, sans-serif;
-    margin-top: 70px;
-  }
-  
-  h1 {
-    margin-bottom: 20px;
-  }
-  
-  form {
-    margin-bottom: 20px;
-  }
-  
-  label {
-    display: block;
-    margin: 10px 0 5px;
-  }
-  
-  input[type="text"] {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-  }
-  
-  button {
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
-    color: #fff;
-    background-color: #007bff;
-    cursor: pointer;
-    margin-right: 10px;
-  }
-  
-  button:disabled {
-    background-color: #ccc;
-  }
-  
-  .error-message {
-    color: red;
-    margin-top: 10px;
-  }
-  
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-  }
-  
-  table, th, td {
-    border: 1px solid #ddd;
-  }
-  
-  th, td {
-    padding: 10px;
-    text-align: left;
-  }
-  
-  th {
-    background-color: #f4f4f4;
-  }
-  
-  tr:nth-child(even) {
-    background-color: #f9f9f9;
-  }
-   */
-
-   .insurance-management {
+.insurance-management {
     background-color: #f8f9fa;
     min-height: 100vh;
     padding-bottom: 2rem;
-  }
-  
-  .insurance-form {
-    
+}
+
+.insurance-form {
+
     background-color: white;
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  }
-  
-  h1, h2 {
+}
+
+h1,
+h2 {
     color: #007bff;
     font-weight: 700;
-  }
-  
-  .table {
+}
+
+.table {
     background-color: white;
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-  }
-  
-  .table thead {
+}
+
+.table thead {
     background-color: #007bff;
-  }
-  
-  .btn-primary, .btn-success, .btn-warning, .btn-danger {
+}
+
+.btn-primary,
+.btn-success,
+.btn-warning,
+.btn-danger {
     transition: all 0.3s ease;
-  }
-  
-  .btn-primary:hover, .btn-success:hover, .btn-warning:hover, .btn-danger:hover {
+}
+
+.btn-primary:hover,
+.btn-success:hover,
+.btn-warning:hover,
+.btn-danger:hover {
     transform: translateY(-2px);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  }
-  
-  @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
     .insurance-form {
-      padding: 1rem;
+        padding: 1rem;
     }
-  }
+}

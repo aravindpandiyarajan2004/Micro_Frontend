@@ -1,243 +1,89 @@
-/* .application-tracking {
-    max-width: 800px;
-    margin: 0 auto;
-    margin-top: 70px;
-    margin-left: 300px;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .application-tracking h1 {
-    text-align: center;
-    color: #003366;
-  }
-  
-  .application-details {
-    padding: 20px;
-  }
-  
-  .detail {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 0;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  .detail:last-child {
-    border-bottom: none;
-  }
-  
-  .label {
-    font-weight: bold;
-    color: #333;
-  }
-  
-  .value {
-    color: #555;
-  }
-  
-  .status {
-    font-weight: bold;
-  }
-  
-  .status.pending {
-    color: #f39c12;
-  }
-  
-  .status.approved {
-    color: #27ae60;
-  }
-  
-  .status.rejected {
-    color: #e74c3c;
-  }
-  
-  .loading, .error, .no-data {
-    text-align: center;
-    color: #555;
-    padding: 20px;
-  }
-   */
-
-   /* Make the navbar fixed */
-
-  
-  
-  /* .application-tracking {
-    margin-top: 70px; 
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
- 
-  .application-tracking h1 {
-    text-align: center;
-    color: #003366;
-  }
-  
-  .application-details {
-    padding: 20px;
-  }
-  
-  .detail {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 0;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  .detail:last-child {
-    border-bottom: none;
-  }
-  
-  .label {
-    font-weight: bold;
-    color: #333;
-  }
-  
-  .value {
-    color: #555;
-  }
-  
-  .status {
-    font-weight: bold;
-  }
-  
-  .status.pending {
-    color: #f39c12;
-  }
-  
-  .status.approved {
-    color: #27ae60;
-  }
-  
-  .status.rejected {
-    color: #e74c3c;
-  }
-  
-  .loading, .error, .no-data {
-    text-align: center;
-    color: #555;
-    padding: 20px;
-  }
-
-  .premium-details table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-  }
-  
-  .premium-details th, .premium-details td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
-  }
-  
-  .premium-details th {
-    background-color: #f4f4f4;
-  }
-  
-  .premium-details tr:nth-child(even) {
-    background-color: #f9f9f9;
-  }
-  
-  .premium-details tr:hover {
-    background-color: #f1f1f1;
-  }
-   */
-
-   .application-tracking-page {
+.application-tracking-page {
     background-color: #f8f9fa;
     min-height: 100vh;
     padding-bottom: 2rem;
-  }
-  
-  h1 {
+}
 
-    text-align: center;
-    color: #003366;
+h1 {
+    color: #007bff;
     font-weight: 700;
-  }
-  
-  .application-card, .premium-card {
+}
+
+.application-card,
+.premium-card {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     border: none;
     border-radius: 10px;
-  }
-  
-  .detail-row {
+}
+
+.detail-row {
     display: flex;
     justify-content: space-between;
     margin-bottom: 0.5rem;
-  }
-  
-  .detail-label {
+}
+
+.detail-label {
     font-weight: 600;
     color: #6c757d;
-  }
-  
-  .detail-value {
+}
+
+.detail-value {
     color: #212529;
-  }
-  
-  .status-badge {
+}
+
+.status-badge {
     padding: 0.25em 0.5em;
     border-radius: 0.25rem;
     font-weight: 600;
-  }
-  
-  .status-badge.approved {
+}
+
+.status-badge.approved {
     background-color: #28a745;
     color: white;
-  }
-  
-  .status-badge.rejected {
+}
+
+.status-badge.rejected {
     background-color: #dc3545;
     color: white;
-  }
-  
-  .status-badge.unknown {
+}
+
+.status-badge.unknown {
     background-color: #ffc107;
     color: #212529;
-  }
-  
-  .table {
+}
+
+.table {
     margin-bottom: 0;
-  }
-  
-  .table th {
+}
+
+.table th {
     background-color: #007bff;
     color: white;
-  }
-  
-  .btn-primary {
+}
+
+.btn-primary {
     background-color: #007bff;
     border-color: #007bff;
-  }
-  
-  .btn-primary:hover {
+}
+
+.btn-primary:hover {
     background-color: #0056b3;
     border-color: #0056b3;
-  }
-  
-  .loading-spinner {
+}
+
+.loading-spinner {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-  }
-  
-  @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
     .detail-row {
-      flex-direction: column;
+        flex-direction: column;
     }
-    
+
     .detail-value {
-      margin-bottom: 0.5rem;
+        margin-bottom: 0.5rem;
     }
-  }
-  
+}

@@ -1,82 +1,148 @@
+.home-container {
+    font-family: 'Arial', sans-serif;
+}
 
+.hero-section {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
 
-   .home-container {
-    padding: 0;
-    margin-top: 13px;
-  }
-  
-  #welcome{
-    margin-top: 25px;
-  }
-  .hero-section {
-    margin-bottom: 50px;
-  }
-  
-  .full-width-image {
-    width: 100%;
+.hero-image {
+    max-width: 80%;
     height: auto;
-    max-height: 660px;
-    object-fit: cover;
-  }
-  
-  .info-section {
-    padding: 100px 0;
-    background-color: #f9f9f9;
-  }
-  
-  .info-icon {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 10px;
-  }
-  
-  .info-section h3 {
-    margin-top: 20px;
-    margin-bottom: 10px;
-  }
-  
-  .info-section p {
-    font-size: 16px;
-  }
-  
-  .footer {
-    background: #003366;
-    color: #fff;
-    text-align: center;
-    padding: 10px 20px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    box-sizing: border-box;
-  }
+    margin-bottom: 30px;
+}
 
-  .trusted-customers {
-    padding: 40px 0;
-    background-color: #e0e6ec;
-  }
-  
-  .trusted-customers h2 {
-    margin-bottom: 20px;
-  }
-  
-  .trusted-customers-img {
-    width: 100%;
-    max-width: 200px;
-    height: auto;
-    margin-bottom: 15px;
-  }
-  
-  .footer p {
-    margin: 0;
-  }
-  
-  .footer a {
-    color: #fff;
+#welcome {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.info-section {
+    background-color: #ffffff;
+}
+
+.info-card {
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.info-card:hover {
+    transform: translateY(-10px);
+}
+
+.info-icon {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.policies-section {
+    background-color: #ecf0f1;
+}
+
+.policy-card {
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.policy-card:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.trusted-customers {
+    background-color: #ffffff;
+}
+
+.trusted-customers-img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.footer {
+    background-color: #34495e;
+    height: 78px;
+    color: #ecf0f1;
+}
+
+.footer a {
+    color: #ecf0f1;
     text-decoration: none;
-  }
-  
-  .footer a:hover {
+}
+
+.footer a:hover {
     text-decoration: underline;
-  }
-  
+}
+
+
+
+.btn-primary {
+    background-color: #3498db;
+    border-color: #3498db;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+    border-color: #2980b9;
+    transform: scale(1.05);
+}
+
+.lead {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+}
+
+h2 {
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+.policy-card .card-title {
+    color: #3498db;
+}
+
+.policy-card .btn-outline-primary {
+    color: #3498db;
+    border-color: #3498db;
+}
+
+.policy-card .btn-outline-primary:hover {
+    background-color: #3498db;
+    color: #ffffff;
+}
+
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.hero-section,
+.info-section,
+.policies-section,
+.trusted-customers {
+    animation: fadeIn 1s ease-in-out;
+}
+
+
+@media (max-width: 768px) {
+    .hero-image {
+        max-width: 100%;
+    }
+
+    #welcome {
+        font-size: 2rem;
+    }
+
+    .info-card {
+        margin-bottom: 30px;
+    }
+}
